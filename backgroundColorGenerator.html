@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+
+<div id="content">
+    <h1> Background Generator </h1>
+    <input type="color" value="#ff6677" id="colorPicker1">
+    
+    <input type="color" value="#ff3355" id="colorPicker2">
+</div>
+
+<script>
+
+let color1 = document.querySelector("#colorPicker1");
+let color2 = document.querySelector("#colorPicker2");
+
+function backgroundColor1(){
+    document.querySelector("#body").style.background= "linear-gradient(to right, "+color1.value+", "+color2.value+")";
+}
+color1.addEventListener("input",backgroundColor1);
+color2.addEventListener("input",backgroundColor1);
+
+</script>
+   
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+body{
+    background-color: burlywood ;
+
+}
+
+h1{
+    font-size: 4rem;
+}
+
+#bodyCenter{
+    text-align: center;
+    padding-top: 15%;
+       
+
+}
+
+#colorButton{
+    cursor: pointer;
+}
+
